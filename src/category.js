@@ -1,3 +1,4 @@
+console.log("we're in category class")
 class Category {
     /*
     new Category({id: 1, name: "travel"})
@@ -23,4 +24,14 @@ class Category {
     static list() {
         return this.l ||= document.querySelector('#list')
     } 
+
+    /* 
+    Category.all() will return a promise for all the category objects
+    that we get from fetching to /categories. This collection will be stored 
+    localled in Category.collection so we can reference it after the initial call 
+    to Category.all()
+    */
+    static all() {
+        console.log
+    }
 }
